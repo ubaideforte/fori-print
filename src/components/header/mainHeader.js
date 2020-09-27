@@ -8,7 +8,7 @@ const MainHeader = () => {
   return (
     <div
       style={{
-        margin: "16px 0px",
+        margin: "8px 0px",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -17,7 +17,7 @@ const MainHeader = () => {
       <img
         src={ForiPrintLogo}
         alt="Fori_Print"
-        height={50}
+        height={60}
         style={{ marginRight: 16 }}
       />
 
@@ -26,11 +26,17 @@ const MainHeader = () => {
           style={{
             height: "inherit",
             borderRadius: "40px 0 0 40px",
+            color: "#acacac",
+            paddingLeft: 32,
           }}
-          defaultValue="Xihu District, Hangzhou"
+          placeholder="Enter keyword to search..."
         />
 
-        <Select defaultValue="Zhejiang" size="large">
+        <Select
+          defaultValue="All Categories"
+          size="large"
+          style={{ color: "#acacac", fontSize: 12, width: 200 }}
+        >
           <Option value="Zhejiang">Zhejiang</Option>
           <Option value="Jiangsu">Jiangsu</Option>
         </Select>

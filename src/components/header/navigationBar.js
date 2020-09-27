@@ -5,7 +5,13 @@ const { SubMenu } = Menu;
 
 const NavigationBar = () => {
   return (
-    <Menu mode="horizontal" defaultSelectedKeys="1">
+    <Menu
+      mode="horizontal"
+      defaultSelectedKeys="1"
+      style={{
+        backgroundColor: "transparent",
+      }}
+    >
       <Menu.Item key="1">Business Cards</Menu.Item>
       <SubMenu key="2" title="Clothing">
         <Menu.Item key="s1">Option 1</Menu.Item>

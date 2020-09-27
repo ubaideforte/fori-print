@@ -7,6 +7,7 @@ const Footer = () => {
     <>
       <Row style={{ borderTop: "1px solid rgba(0,0,0,0.1)" }}>
         <Col offset={5} span={3}>
+          <h2 style={{ margin: 0 }}>Who we are</h2>
           <ul style={{ listStyle: "none", padding: "12px 0" }}>
             <li style={{ margin: "12px 0" }}>About us</li>
             <li style={{ margin: "12px 0" }}>Contact</li>
