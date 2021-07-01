@@ -1,0 +1,76 @@
+.contact-link:hover{
+    transition: 0.5s ease;
+    color: #eea019
+}
+.contact-link{
+    transition: 0.5s ease;
+    font-size: 18px;
+    color:#d0d0d0;
+}
+
+.link:hover{
+    transition: 0.5s ease;
+    transition: 0.5s ease;
+    color: #eea019
+}
+.link{
+    transition: 0.5s ease;
+    width: auto;
+    padding-top: 18px;
+    font-size: 18px;
+    color:#d0d0d0;
+}
+
+.emerge:hover{
+    transition: 0.5s ease;
+    transition: 0.5s ease;
+    color: #eea019;
+}
+.emerge{
+    transition: 0.5s ease;
+    font-size: 24px;
+    color:#fff;
+}
+
+.footerIcons:hover{
+    transition: 0.5s ease;
+    color: #eea019;
+}
+.footerIcons{
+    transition: 0.5s ease;
+    margin-right: 25px;
+    color:#fff;
+}
+
+.socialIcons:hover{
+    transition: 0.5s ease;
+    color: #eea019;
+    background-color: #fff;
+}
+.socialIcons{
+    transition: 0.5s ease;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 12px;
+    color:#fff;
+    background-color: #eea019;
+}
+
+.footer-bullets > ul li::before {
+    content: "";
+    background-color: #eea019;
+    font-weight: bold;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-bullets > ul {
+    list-style: none; /* Remove default bullets */
+   }
