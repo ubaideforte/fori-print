@@ -27,7 +27,7 @@ const StyledCard = styled.div`
 `;
 
 const HomeCard = (props) => {
-  const { cardImage, price, itemName, sub } = props;
+  const { cardImage, price, itemName, sub } = props.cardData;
   return (
     <StyledCard cardImage={cardImage}>
       <div className="card-image">
