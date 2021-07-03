@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledDivider = styled.div`
+  margin-top: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
