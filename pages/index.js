@@ -2,10 +2,9 @@ import Head from "next/head";
 import { Row, Col } from "antd";
 import HomeCard from "../src/components/cards/homeCards";
 import { cardImage } from "../src/images";
-import Slider from "react-slick";
 import Divider from "../src/components/divider";
-import { footerBanner, homepageBanner } from "../src/images";
-import FooterWrapper from "../src/components/footer/footerWrapper";
+import { footerBanner, homepageBanner, cart, product, money } from "../src/images";
+import { IoIosArrowForward } from "react-icons/io";
 
 const cardData1 = [
   { price: "BUY 5 @ 150", itemName: "letterheads", cardImage },
@@ -61,6 +60,54 @@ export default function Home() {
         }}
       />
 
+      <Row className="m-auto col-8" gutter={[48, 48]}>
+        <Col span={8}>
+          <Row gutter={[4, 4]} align="middle" justify="space-between">
+            <Col>
+              <img alt="cart" src={cart} className="img-fluid" width={40} />
+            </Col>
+            <Col>
+              <p className="m-0">
+                Even Low Quantities <br /> Best Prices
+              </p>
+            </Col>
+            <Col>
+              <IoIosArrowForward />
+            </Col>
+          </Row>
+        </Col>
+
+        <Col span={8}>
+          <Row gutter={[4, 4]} align="middle" justify="space-between">
+            <Col>
+              <img alt="cart" src={product} className="img-fluid" width={40} />
+            </Col>
+            <Col>
+              <p className="m-0">2000 products and design</p>
+            </Col>
+            <Col>
+              <IoIosArrowForward />
+            </Col>
+          </Row>
+        </Col>
+
+        <Col span={8}>
+          <Row gutter={[4, 4]} align="middle" justify="space-between">
+            <Col>
+              <img alt="cart" src={money} className="img-fluid" width={40} />
+            </Col>
+            <Col>
+              <p className="m-0">
+                100% satisfaction or <br /> Money back
+              </p>
+            </Col>
+            <Col>
+              <IoIosArrowForward />
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+
       <Divider>FEATURED PRODUCTS</Divider>
       <Row justify="left" className="col-8 m-auto" gutter={[24, 24]}>
         {cardData1.map((item, index) => (
@@ -99,8 +146,6 @@ export default function Home() {
           width: "60vw",
         }}
       />
-
-      <FooterWrapper />
     </div>
   );
 }

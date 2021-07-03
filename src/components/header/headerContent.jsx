@@ -98,128 +98,57 @@ const HeaderContent = () => {
   });
 
   return (
-    <StyledHeader className="container">
-      <Row justify="space-between" align="middle">
-        <Col span={4}>
-          <img src={logoImage} className="img-fluid site-logo" />
-        </Col>
+    <>
+      <div style={{ backgroundColor: "#a716a" }}>
+        <div className="m-auto col-10 text-white fw-bold d-flex justify-content-between">
+          <span className="m-0">Shahzad Ahmed (Memon)</span>
+          <span className="m-0">+92 342 1234567</span>
+        </div>
+      </div>
+      <StyledHeader className="container">
+        <Row justify="space-between" align="middle">
+          <Col span={4}>
+            <img src={logoImage} className="img-fluid site-logo" />
+          </Col>
 
-        <Col span={10}>
-          <Input size="large" addonAfter={<SearchOutlined />} className="search-box" />
-        </Col>
+          <Col span={10}>
+            <Input size="large" addonAfter={<SearchOutlined />} className="search-box" />
+          </Col>
 
-        <Col>
-          <div className="icon-box">
-            <BiHeadphone className="icon" />
+          <Col>
+            <div className="icon-box">
+              <BiHeadphone className="icon" />
 
-            <div>
-              <p className="title">
-                <b>Help is here</b>
-              </p>
-              <sub className="sub-title">123456789</sub>
+              <div>
+                <p className="title">
+                  <b>Help is here</b>
+                </p>
+                <sub className="sub-title">123456789</sub>
+              </div>
             </div>
-          </div>
-        </Col>
+          </Col>
 
-        <Col>
-          <div className="icon-box">
-            <AiOutlineUser className="icon" />
+          <Col>
+            <div className="icon-box">
+              <AiOutlineUser className="icon" />
 
-            <div>
-              <p className="title">Sign in</p>
-              <sub className="sub-title">My Account</sub>
+              <div>
+                <p className="title">Sign in</p>
+                <sub className="sub-title">My Account</sub>
+              </div>
             </div>
-          </div>
-        </Col>
+          </Col>
 
-        <Col>
-          <div className="icon-box">
-            <AiOutlineShoppingCart className="icon" />
-            <p className="title">Cart</p>
-          </div>
-        </Col>
-      </Row>
-    </StyledHeader>
+          <Col>
+            <div className="icon-box">
+              <AiOutlineShoppingCart className="icon" />
+              <p className="title">Cart</p>
+            </div>
+          </Col>
+        </Row>
+      </StyledHeader>
+    </>
   );
 };
 
 export default HeaderContent;
-
-{
-  /* <Col xl={17}>
-<StyledMenu
-  mode="horizontal"
-  style={{ display: "flex", justifyContent: "space-around" }}
->
-  <StyledMenu.Item key="home">
-    <Link href="/">
-      <p
-        style={{
-          margin: 0,
-          fontWeight: 600,
-          fontSize: 14,
-        }}
-      >
-        HOME
-      </p>
-    </Link>
-  </StyledMenu.Item>
-
-  <SubMenu
-    key="emerge-story"
-    title={
-      <Link href="/mission-and-vision">
-        <p >EMERGE STORY</p>
-      </Link>
-    }
-  >
-    <StyledMenu.ItemGroup>
-      <StyledMenu.Item key="vision-and-mission">
-        <Link href="/mission-and-vision/#our-mission">
-          <p >VISSION AND MISSION</p>
-        </Link>
-      </StyledMenu.Item>
-      <StyledMenu.Item key="about">ABOUT</StyledMenu.Item>
-    </StyledMenu.ItemGroup>
-  </SubMenu>
-
-  <StyledMenu.Item key="become-a-member" title="">
-    <Link href="/application">
-      <p
-        style={{
-          margin: 0,
-          fontWeight: 600,
-          fontSize: 14,
-        }}
-      >
-        BECOME A MEMBER
-      </p>
-    </Link>
-  </StyledMenu.Item>
-
-  <SubMenu key="projects" title="PROJECTS">
-    <StyledMenu.ItemGroup>
-      <StyledMenu.Item key="eyp">EYP</StyledMenu.Item>
-      <StyledMenu.Item key="dialogue">DIALOGUE</StyledMenu.Item>
-      <StyledMenu.Item key="prespective">
-        PRESPECTIVE
-      </StyledMenu.Item>
-    </StyledMenu.ItemGroup>
-  </SubMenu>
-
-  <StyledMenu.Item key="contact-us" title="CONTACT US">
-    <Link href="/our-contacts">
-      <p
-        style={{
-          margin: 0,
-          fontWeight: 600,
-          fontSize: 14,
-        }}
-      >
-        CONTACT US
-      </p>
-    </Link>
-  </StyledMenu.Item>
-</StyledMenu>
-</Col> */
-}
