@@ -1,64 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col, Menu, Input } from "antd";
+import { Row, Col, Input, Dropdown } from "antd";
 import styled from "styled-components";
 import { logoImage } from "../../images";
 import { SearchOutlined } from "../icons";
 import { BiHeadphone } from "react-icons/bi";
-import { AiOutlineShoppingCart, AiOutlineUser } from "react-icons/ai";
-
-const StyledMenu = styled(Menu)`
-  text-align: center;
-  background-color: transparent;
-  border: none !important;
-  outline: none !important;
-
-  //------------------------//
-  // Changing submenu title //
-  //------------------------//
-  .ant-menu-submenu {
-    border: none !important;
-  }
-
-  .ant-menu-submenu-title {
-    color: #fff;
-    font-weight: 600;
-    min-width: 150px;
-    text-align: center;
-
-    :hover {
-      color: #efa718 !important;
-    }
-  }
-
-  .ant-menu-submenu-open,
-  .ant-menu-submenu-active {
-    border: none !important;
-
-    .ant-menu-submenu-title {
-      color: #efa718;
-    }
-  }
-
-  //----------------------------------//
-  // Menu title When menu is selected //
-  //----------------------------------//
-  ant-menu-submenu-active,
-  .ant-menu-submenu-selected {
-    border: none !important;
-    color: #efa718;
-
-    .ant-menu-submenu-title {
-      color: #efa718;
-    }
-  }
-
-  .ant-menu-item-active,
-  .ant-menu-item-selected {
-    border: none !important;
-  }
-`;
-
-const { SubMenu } = StyledMenu;
+import { AiOutlineShoppingCart, AiOutlineUser, AiFillHome } from "react-icons/ai";
 
 //--------------------------------------------------------*
 // Note: A little part of menu styling is done in App.css *
@@ -82,6 +28,71 @@ const StyledHeader = styled.div`
     color: grey;
   }
 `;
+
+const StyledNavbar = styled.nav`
+  border-bottom: 1px solid #ececec;
+
+  height: 60px;
+  cursor: pointer;
+
+  .nav-item {
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    transition: 0.8s linear;
+    background-color: #fff;
+    box-sizing: border-box;
+
+    :hover {
+      background-color: rgba(255, 0, 0, 0.7);
+      color: #fff;
+
+      &:before {
+        content: " ";
+        height: 3px;
+        background-color: blue;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+`;
+
+const StyledMenu = styled.div`
+  background-color: #fff;
+  position: relative;
+
+  .menu-item {
+    padding: 0px 24px;
+    height: 48px;
+    line-height: 48px;
+
+    :hover {
+      background-color: rgba(255, 0, 0, 0.7);
+      color: #fff;
+
+      &:before {
+        content: " ";
+        width: 3px;
+        height: 48px;
+        margin: 0;
+        display: inline-block;
+        background-color: blue;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+`;
+
+const menu = (
+  <StyledMenu>
+    <div className="menu-item">Product 1</div>
+    <div className="menu-item">Product 2</div>
+    <div className="menu-item">Product 3</div>
+    <div className="menu-item">Product 4</div>
+  </StyledMenu>
+);
 
 const HeaderContent = () => {
   const [scroll, setScroll] = useState();
@@ -147,6 +158,36 @@ const HeaderContent = () => {
           </Col>
         </Row>
       </StyledHeader>
+
+      <StyledNavbar>
+        <Row className="col-8 m-auto">
+          <Col span={6}>
+            <Dropdown overlay={menu}>
+              <div className="nav-item">
+                <AiFillHome /> &nbsp;&nbsp; Home
+              </div>
+            </Dropdown>
+          </Col>
+
+          <Col span={6}>
+            <Dropdown overlay={menu}>
+              <p className="nav-item">Shop</p>
+            </Dropdown>
+          </Col>
+
+          <Col span={6}>
+            <Dropdown overlay={menu}>
+              <p className="nav-item">Apout</p>
+            </Dropdown>
+          </Col>
+
+          <Col span={6}>
+            <Dropdown overlay={menu}>
+              <p className="nav-item">Career</p>
+            </Dropdown>
+          </Col>
+        </Row>
+      </StyledNavbar>
     </>
   );
 };
