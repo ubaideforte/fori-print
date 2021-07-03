@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const StyledSocialIconsDark = styled.div`
   a {
-    color: #fff;
+    color: #000;
     transition: 0.5s;
     :hover {
       color: #eea019;
@@ -91,25 +91,3 @@ export const SocialIcons = ({ className }) => {
     </StyledSocialIconsDark>
   );
 };
-
-// export const SocialIconsLight = () => {
-//   return (
-//     <StyledSocialIconsDark className="narrow-social-icons">
-//       <a href="https://www.facebook.com/LetsEmergeForward" target="blank">
-//         <FaFacebookF />
-//       </a>
-//       <a href="https://twitter.com/EmergeForward" target="blank">
-//         <FaTwitter />
-//       </a>
-//       <a href="https://www.instagram.com/emergeforward/" target="blank">
-//         <FaInstagram />
-//       </a>
-//       <a
-//         href="https://www.youtube.com/channel/UCFkPtfpMV_z1QVxvpGheNIg/featured"
-//         target="blank"
-//       >
-//         <FaYoutube />
-//       </a>
-//     </StyledSocialIconsDark>
-//   );
-// };

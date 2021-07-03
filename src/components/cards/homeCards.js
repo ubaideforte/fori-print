@@ -24,6 +24,11 @@ const StyledCard = styled.div`
     margin: 12px 0 0 0;
     font-weight: 600;
   }
+
+  .sub-title {
+    color: grey;
+    margin: 0;
+  }
 `;
 
 const HomeCard = (props) => {
@@ -34,7 +39,7 @@ const HomeCard = (props) => {
         <p className="price">{price}</p>
       </div>
       <p className="item-name">{itemName}</p>
-      <p className="item-name">{sub}</p>
+      <p className="sub-title">{sub}</p>
     </StyledCard>
   );
 };
