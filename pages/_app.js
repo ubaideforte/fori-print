@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import "antd/dist/antd.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Layout from "../src/components/layout/layout";
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 // Importing MIE.CSS - Set font size globally ¯\_(ツ)_/¯
 import "../styles/mie.css";
 

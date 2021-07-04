@@ -1,35 +1,35 @@
 import Head from "next/head";
 import { Row, Col } from "antd";
 import HomeCard from "../src/components/cards/homeCards";
-import { cardImage } from "../src/images";
+import { cardImage1, cardImage2, cardImage3, cardImage4 } from "../src/images";
 import Divider from "../src/components/divider";
 import { footerBanner, homepageBanner, cart, product, money } from "../src/images";
 import { IoIosArrowForward } from "react-icons/io";
 
 const cardData1 = [
-  { price: "BUY 5 @ 150", itemName: "letterheads", cardImage },
-  { price: "BUY 5 @ 150", itemName: "letterheads", cardImage },
-  { price: "BUY 5 @ 150", itemName: "letterheads", cardImage },
-  { price: "BUY 5 @ 150", itemName: "letterheads", cardImage },
+  { price: "BUY 5 @ 150", itemName: "letterheads", cardImage: cardImage1 },
+  { price: "BUY 5 @ 150", itemName: "letterheads", cardImage: cardImage2 },
+  { price: "BUY 5 @ 150", itemName: "letterheads", cardImage: cardImage3 },
+  { price: "BUY 5 @ 150", itemName: "letterheads", cardImage: cardImage4 },
 ];
 
 const cardData2 = [
   {
     price: "BUY 5 @ 150",
     itemName: "letterheads",
-    cardImage,
+    cardImage: cardImage1,
     sub: "lorem ipsum dolor de sumst i dna amp sau mnu pit vrilo",
   },
   {
     price: "BUY 5 @ 150",
     itemName: "letterheads",
-    cardImage,
+    cardImage: cardImage2,
     sub: "lorem ipsum dolor de sumst i dna amp sau mnu pit vrilo",
   },
   {
     price: "BUY 5 @ 150",
     itemName: "letterheads",
-    cardImage,
+    cardImage: cardImage3,
     sub: "lorem ipsum dolor de sumst i dna amp sau mnu pit vrilo",
   },
 ];

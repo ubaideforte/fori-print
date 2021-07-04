@@ -1,5 +1,8 @@
 export const logoImage = "/images/logoImage.png";
-export const cardImage = "/images/cardImage.jpg";
+export const cardImage1 = "/images/cardImage.jpg";
+export const cardImage2 = "/images/cardImage2.jpg";
+export const cardImage3 = "/images/cardImage3.jpg";
+export const cardImage4 = "/images/cardImage4.jpg";
 export const footerBeforeImage = "/images/footerBeforeImage.png";
 export const footerBanner = "/images/footerBanner.png";
 export const homepageBanner = "/images/homepageBanner.webp";

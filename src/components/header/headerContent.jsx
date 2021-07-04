@@ -45,18 +45,17 @@ const StyledNavbar = styled.nav`
     height: 58px;
     line-height: 58px;
     text-align: center;
-    transition: 0.8s linear;
+    transition: 0.2s linear;
     background-color: #fff;
     box-sizing: border-box;
 
     :hover {
-      background-color: rgba(255, 0, 0, 0.7);
-      color: #fff;
+      background-color: rgba(255, 200, 200, 0.7);
 
       &:before {
         content: " ";
         height: 3px;
-        background-color: blue;
+        background-color: red;
         width: 100%;
         display: block;
       }
@@ -74,8 +73,7 @@ const StyledMenu = styled.div`
     line-height: 48px;
 
     :hover {
-      background-color: rgba(255, 0, 0, 0.7);
-      color: #fff;
+      background-color: rgba(255, 200, 200, 0.7);
 
       &:before {
         content: " ";
@@ -83,7 +81,7 @@ const StyledMenu = styled.div`
         height: 48px;
         margin: 0;
         display: inline-block;
-        background-color: blue;
+        background-color: red;
         position: absolute;
         left: 0;
       }
