@@ -11,6 +11,7 @@ import { AiOutlineShoppingCart, AiOutlineUser, AiFillHome } from "react-icons/ai
 //--------------------------------------------------------*
 
 const StyledHeader = styled.div`
+  padding-top: 12px;
   .icon-box {
     display: flex;
     align-items: center;
@@ -26,10 +27,15 @@ const StyledHeader = styled.div`
   }
   .sub-title {
     color: grey;
+    margin: 0;
   }
 `;
 
 const StyledNavbar = styled.nav`
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
   border-bottom: 1px solid #ececec;
 
   height: 60px;
@@ -110,7 +116,7 @@ const HeaderContent = () => {
 
   return (
     <>
-      <div style={{ backgroundColor: "#a716a" }}>
+      <div style={{ backgroundColor: "#a716a0" }}>
         <div className="m-auto col-10 text-white fw-bold d-flex justify-content-between">
           <span className="m-0">Shahzad Ahmed (Memon)</span>
           <span className="m-0">+92 342 1234567</span>
@@ -118,7 +124,7 @@ const HeaderContent = () => {
       </div>
       <StyledHeader className="container">
         <Row justify="space-between" align="middle">
-          <Col span={4}>
+          <Col span={3}>
             <img src={logoImage} className="img-fluid site-logo" />
           </Col>
 

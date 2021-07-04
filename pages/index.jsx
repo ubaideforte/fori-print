@@ -49,17 +49,16 @@ export default function Home() {
         <title>Fori print | Home</title>
       </Head>
 
-      <div
-        style={{
-          backgroundImage: `url(${homepageBanner})`,
-          height: "70vh",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          margin: "32px auto",
-          width: "96vw",
-        }}
-      />
-
+      <div className="text-center">
+        <img
+          alt="home-banner"
+          src={homepageBanner}
+          style={{
+            margin: "32px auto",
+          }}
+          className="img-fluid"
+        />
+      </div>
       <Row className="m-auto col-8" gutter={[48, 48]}>
         <Col span={8}>
           <Row gutter={[4, 4]} align="middle" justify="space-between">
