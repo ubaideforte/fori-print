@@ -69,7 +69,9 @@ const FooterContent = () => {
         <Col span={6} className="footer-item-wrapper">
           <div className="footer-item-container">
             <div className="link-header">What we offer</div>
-            <div className="footer-item">Our product</div>
+            <div className="footer-item">
+              <Link href="/order">Order Now</Link>
+            </div>
             <div className="footer-item">Upload your designs</div>
           </div>
         </Col>
